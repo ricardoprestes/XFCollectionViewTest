@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using Xamarin.Forms;
+using XFCollectionViewTest.ViewModels;
 
 namespace XFCollectionViewTest.Views
 {
@@ -9,6 +10,8 @@ namespace XFCollectionViewTest.Views
         public MainPage()
         {
             InitializeComponent();
+
+            BindingContext = new MainViewModel();
         }
     }
 }
