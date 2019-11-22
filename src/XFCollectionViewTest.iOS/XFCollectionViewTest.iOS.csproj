@@ -110,6 +110,8 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\folder_open.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\folder_open.imageset\folder-open.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -129,5 +131,8 @@
       <Project>{86CF5555-E946-4E44-B255-EF2DB9F50D33}</Project>
       <Name>XFCollectionViewTest</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\folder_open.imageset\" />
   </ItemGroup>
 </Project>

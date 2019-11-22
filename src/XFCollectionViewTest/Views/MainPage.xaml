@@ -9,13 +9,30 @@
     <StackLayout>
         <CollectionView
             ItemsSource="{Binding Monkeys}"
-            EmptyView="Nenhum item para listar">
+         >
+            <CollectionView.EmptyView>
+                <StackLayout>
+                    <Image
+                        Source="folder_open"
+                        HeightRequest="200"
+                        WidthRequest="200"
+                        Aspect="AspectFit"
+                    />
+                    
+                    <Label
+                        Text="Nenhum item para exibir no momento"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                    />
+                </StackLayout>
+            </CollectionView.EmptyView>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout
                         Padding="10">
                         <Label
-                            Text="{Binding Name}"/>
+                            Text="{Binding Name}"
+                         />
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
